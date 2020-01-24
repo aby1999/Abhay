@@ -1,0 +1,113 @@
+<html><head>
+<script type = text/javascript>
+    function answers()
+    {
+		var marks=0;
+		var attempt = 0;
+		 var a =[0,0,0,0,3];
+		for(var i=0;i<5;i++)
+		{
+			var x = document.getElementsByName("t"+i);
+			for(var j=0;j<x.length;j++)
+			{
+				if(x[j].checked)
+				{
+					attempt = attempt+1;
+					if(j==a[i])
+					{
+						marks=marks+1;
+					}
+				}
+			}	
+		}
+		alert("your marks are : "+marks +" and you attempt "+ attempt+" no. of questions" );
+	
+		
+    }
+	
+</script></head>
+<body onLoad=setTimeout("answers()",300000)>
+<h1><center><font color =red>Online Examination in IMS Engineering College</font></center></h1>
+<h2><b>Multiple Choice question Paper : </b></h2>
+<table>
+	<tr>
+		<td colspan = 4><font color =blue><b>1. In which year of First World War Germany declared war on Russia and France?</b></font><br></td>
+	</tr>
+	<tr>
+		<td> &nbsp</td>
+	</tr>
+		<td></td>
+		<td><input type =radio name =t0 value = 1>A. 1914</td>
+		<td><input type =radio name =t0 value = 2>B. 1915</td>
+		<td><input type =radio name =t0 value = 3>C. 1916</td>
+		<td><input type =radio name =t0 value = 4>D. 1917</td>
+	</tr>
+	<tr>
+		<td colspan = 4><font color =blue><b><br>2. ICAO stands for</b></font><br></td>
+	</tr>
+	<tr>
+		<td> &nbsp</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type =radio name =t1 value =1>A. International Civil Aviation Organization :</td>
+		<td><input type =radio name =t1 value =2>B. Indian Corporation of Agriculture Organization:</td>
+		<td><input type =radio name =t1 value =3>C. Institute of Company of Accounts Organization:</td>
+		<td><input type =radio name =t1 value =4>D. None of the above:</td>
+	<tr>
+		<td colspan = 4><font color =blue><b><br>3. Poverty Line means?</b></font><br></td>
+	</tr>
+	<tr>
+		<td> &nbsp</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type =radio name =t2 value =1>A. The line of demarcation between the rich and poor</td>
+		<td><input type =radio name =t2 value =2>B. The stage at which there is a leveling down between the rich and the poor</td>
+		<td><input type =radio name =t2 value =3>C. The lowest level in the ladder of economic prosperity</td>
+		<td><input type =radio name =t2 value =4>D. The minimum level of per capita consumption expenditure</td>
+	</tr>
+	<tr>
+		<td colspan = 4><font color =blue><b><br>4. India's first Technicolor film ____ in the early 1950s was produced by ____</b></font><br></td>
+	</tr>
+	<tr>
+		<td> &nbsp</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type =radio name =t3 value =1>A.'Jhansi Ki Rani', Sohrab Modi</td>
+		<td><input type =radio name =t3 value =2>B.'Jhansi Ki Rani', Sir Syed Ahmed</td>
+		<td><input type =radio name =t3 value =3>C.'Mirza Ghalib', Sohrab Modi</td>
+		<td><input type =radio name =t3 value =4>D.'Mirza Ghalib', Munshi Premchand</td>
+	</tr>
+	<tr>
+		<td colspan = 4><font color =blue><b><br>5. Potato was introduced to Europe by ? </b></font><br></td>
+	</tr>
+	<tr>
+		<td> &nbsp</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type =radio name =t4 value =1>A. Dutch</td>
+		<td><input type =radio name =t4 value =2>B. Portuguese</td>
+		<td><input type =radio name =t4 value =3>C. Germans</td>
+		<td><input type =radio name =t4 value =4>D. Spanish</td>
+	</tr>
+</table>
+<br><br><br>
+<table width =100%>
+	<tr>
+		<td align =right><input type = button value = Submit onclick = answers() size =200></td>
+	</td>
+	</tr>
+	<tr>	<td><font color = red size =2>IMS Engineering College Online Examination Service<br>
+					Develop by IMSEC Software Development Cell (Mr. Abhay Agrahary)<br>
+					copyright @ 2009 IMS Engineering College, NH -24, Adhyatmic Nagar, Dasna - Ghaziabad.<br>
+					Website: www.imsec.ac.in//abhay_website/wesite.html, E-mail: abhayagrahary7080@gmail.com, director@imsec.ac.in<br>
+		</font></td>
+	</tr>
+		
+</table>
+
+
+</body></html>
